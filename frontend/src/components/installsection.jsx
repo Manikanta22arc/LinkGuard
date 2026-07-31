@@ -17,12 +17,9 @@ export default function Download() {
 
         <div className="download-buttons">
 
-          <button
-            className="download-btn"
-            onClick={() => window.open("/LinkGuard.zip")}
-          >
-            Download Extension
-          </button>
+          <a href="/downloads/LinkGuard-Chrome-Extension.zip" download>
+            <button>Download Chrome Extension</button>
+          </a>
 
           <button
             className="github-btn"

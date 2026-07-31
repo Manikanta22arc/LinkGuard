@@ -103,7 +103,7 @@ setResult({
   
     const features = [  
   {
-    title: "AI Threat Detection",
+    title: "Threat Detection",
     icon: <FaRobot />,
     desc: "Machine learning detects phishing, malware, defacement and suspicious URLs in real time."
   },
@@ -115,7 +115,7 @@ setResult({
   {
     title: "Instant Scan",
     icon: <FaBolt />,
-    desc: "Analyze any URL in under one second using our trained AI model."
+    desc: "Analyze any URL in under one second ."
   },
   {
     title: "Privacy First",
@@ -210,14 +210,14 @@ variants={fadeUp}
 className="hero-badge"
 >
 <FaShieldAlt />
-<span>AI Powered Cyber Protection</span>
+<span> Cybersecurity Protection</span>
 </motion.div>
 
 <motion.h1 variants={fadeUp} className="hero-title">
-  AI Powered
+  Advanced
   <br />
   <span className="gradient-text">
-    Cybersecurity
+    Cybersecurity Protection
   </span>
   <br />
   For Every Click.
@@ -364,7 +364,7 @@ transition={{duration:0.8}}
 
 <div className="terminal-title">
 
-AI Threat Scanner
+ Threat Scanner
 
 </div>
 
@@ -399,7 +399,7 @@ disabled={scanning}
 
 <p className="terminal-idle">
 
-Paste any URL and let AI analyze
+Paste any URL and let it analyze
 its safety in real time.
 
 </p>
@@ -514,7 +514,7 @@ width:`${result.score}%`
 
 <p>
 
-<b>AI Verdict</b>
+<b> Verdict</b>
 
 </p>
 
@@ -709,7 +709,7 @@ LinkGuard uses Machine Learning to detect malicious websites before they can ste
                 <FaShieldAlt />
                 <span>LinkGuard </span>
               </div>
-              <p>AI-powered protection against phishing, scam links and malicious websites.</p>
+              <p>-Intelligent phishing  protection against phishing, scam links and malicious websites.</p>
               <div className="socials">
                 <a href="#" aria-label="GitHub"><FaGithub /></a>
                 <a href="#" aria-label="Twitter"><FaTwitter /></a>

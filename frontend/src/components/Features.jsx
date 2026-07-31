@@ -22,7 +22,7 @@ const features = [
     desc: "Works directly inside your browser without interrupting your workflow."
   },
   {
-    title: "AI Analysis",
+    title: "Analysis",
     desc: "Provides concise security insights for suspicious websites."
   }
 ];
