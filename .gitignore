@@ -21,3 +21,9 @@ Thumbs.db
 
 # Logs
 *.log
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+.vscode/
