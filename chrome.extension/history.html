@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LinkGuard  — Scan History</title>
+<link rel="stylesheet" href="history.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="container">
+
+    <div class="header">
+      <div class="brand">
+        <div class="mark">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <path d="M12 2L4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <h2>Scan History</h2>
+          <p>Recent website security checks</p>
+        </div>
+      </div>
+
+      <button id="clear">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+        </svg>
+        Clear
+      </button>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div id="history">
+      <div class="loading">Loading...</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="history.js"></script>
+</body>
+</html>

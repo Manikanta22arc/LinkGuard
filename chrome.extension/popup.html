@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LinkGuard </title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+          <path d="M12 2L4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>LinkGuard <span>AI</span></h1>
+        <p>Real-time browser protection</p>
+      </div>
+    </div>
+    <div class="pulse-dot" id="liveDot"></div>
+  </div>
+
+  <div class="scan-stage">
+    <div class="ring-wrap" id="ringWrap">
+      <svg class="ring" viewBox="0 0 120 120">
+        <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+        <circle class="ring-progress" id="ringProgress" cx="60" cy="60" r="52"></circle>
+      </svg>
+      <div class="ring-icon" id="ringIcon">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3z"/>
+        </svg>
+      </div>
+    </div>
+
+    <h2 class="status-label" id="status">Checking...</h2>
+    <p class="status-sub" id="statusSub">Analyzing site signals</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="block">
+    <span class="label">Current website</span>
+    <p class="domain" id="domain">Loading...</p>
+  </div>
+
+  <button id="scan" class="btn btn-primary">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 21l-4.35-4.35"/><circle cx="11" cy="11" r="7"/>
+    </svg>
+    Rescan this site
+  </button>
+
+  <button id="history" class="btn btn-ghost">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 3"/>
+    </svg>
+    View scan history
+  </button>
+
+  <div class="foot">Protected by LinkGuard </div>
+
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

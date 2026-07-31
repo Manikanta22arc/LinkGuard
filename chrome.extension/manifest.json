@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+
+  "name": "LinkGuard",
+
+  "version": "1.0",
+
+  "description": "Browser extension for phishing URL detection and website protection.",
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "storage",
+    "notifications"
+  ],
+
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:8000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
