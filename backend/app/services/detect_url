@@ -1,0 +1,35 @@
+
+def detect_url(url: str):
+
+    if not valid_url(url):
+        return {
+            "prediction": "Invalid",
+            "status": "Rejected",
+            "reason": "Invalid URL format."
+        }
+
+    # 1. Trusted domain check
+    if is_trusted(url):
+        return {
+            "prediction": "Safe",
+            "status": "Allowed",
+            "reason": "Trusted website."
+        }
+
+    # 2. Known phishing domain check
+    if is_blacklisted(url):
+        return {
+            "prediction": "Phishing",
+            "status": "Blocked",
+            "reason": "Known phishing domain."
+        }
+
+    # Keep your remaining detection checks here.
+    # Do not classify a URL as phishing based on
+    # a single keyword or TLD alone.
+
+    return {
+        "prediction": "Safe",
+        "status": "Allowed",
+        "reason": "No security threats detected."
+    }

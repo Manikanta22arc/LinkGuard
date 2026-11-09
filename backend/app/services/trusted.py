@@ -1,3 +1,4 @@
+
 from urllib.parse import urlparse
 
 TRUSTED_DOMAINS = {
@@ -25,7 +26,7 @@ TRUSTED_DOMAINS = {
     "cloudflare.com",
     "oracle.com",
     "ibm.com",
-    "aws.amazon.com",
+    "amazonaws.com",
     "azure.microsoft.com",
     "mongodb.com",
     "postgresql.org",
@@ -38,16 +39,23 @@ TRUSTED_DOMAINS = {
 
 def is_trusted(url):
     try:
-        domain = urlparse(url).netloc.lower()
+        parsed = urlparse(url)
 
-        if domain.startswith("www."):
-            domain = domain[4:]
+        host = parsed.hostname
+
+        if not host:
+            return False
+
+        host = host.lower().rstrip(".")
+
+        # Normalize international domain names
+        host = host.encode("idna").decode("ascii")
 
         for trusted in TRUSTED_DOMAINS:
-            if domain == trusted or domain.endswith("." + trusted):
+            if host == trusted or host.endswith("." + trusted):
                 return True
 
         return False
 
-    except:
+    except (ValueError, UnicodeError):
         return False
