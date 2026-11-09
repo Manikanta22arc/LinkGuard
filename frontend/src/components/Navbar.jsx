@@ -1,35 +1,35 @@
-import "./Navbar.css";
+  import "./Navbar.css";
 
-export default function Navbar() {
-  return (
-    <nav className="navbar">
+  export default function Navbar() {
+    return (
+      <nav className="navbar">
 
-      <div className="logo">
+        <div className="logo">
 
-        <div className="logo-box">
-          LG
+          <div className="logo-box">
+            LG
+          </div>
+
+          <div>
+
+            <h2>LinkGuard </h2>
+
+            <span>Browser Protection</span>
+
+          </div>
+
         </div>
 
-        <div>
+        <div className="nav-links">
 
-          <h2>LinkGuard </h2>
+          <a href="#features">Features</a>
 
-          <span>Browser Protection</span>
+          <a href="#how">How it Works</a>
+
+          <a href="#download">Download</a>
 
         </div>
 
-      </div>
-
-      <div className="nav-links">
-
-        <a href="#features">Features</a>
-
-        <a href="#how">How it Works</a>
-
-        <a href="#download">Download</a>
-
-      </div>
-
-    </nav>
-  );
-}
+      </nav>
+    );
+  }

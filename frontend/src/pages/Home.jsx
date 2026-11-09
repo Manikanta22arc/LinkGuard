@@ -252,14 +252,16 @@ className="hero-badge"
 variants={fadeUp}
 className="hero-buttons"
 >
+<a
+  href="/downloads/LinkGuard-extension.zip"
+  download
+  className="primary"
+>
+  Install Extension <FaArrowRight />
+</a>
 
-<button className="primary">
-
-Install Extension
 
 <FaArrowRight/>
-
-</button>
 
 <button className="secondary">
 
@@ -696,9 +698,15 @@ Stay One Step Ahead of Cyber Threats
 <p>
 LinkGuard uses Machine Learning to detect malicious websites before they can steal your credentials or infect your device.
 </p>
-          <button className="primary large">
+          <a
+  href="/downloads/LinkGuard-extension.zip"
+  download
+  className="primary large"
+>
+   <FaArrowRight />
+</a>
             <span>Install Extension</span> <FaArrowRight />
-          </button>
+          
         </motion.section>
 
         {/* FOOTER */}

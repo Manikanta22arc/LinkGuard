@@ -16,11 +16,13 @@ export default function Download() {
         </p>
 
         <div className="download-buttons">
-
-          <a href="/downloads/LinkGuard-Chrome-Extension.zip" download>
-            <button>Download Chrome Extension</button>
-          </a>
-
+<a
+  href="/downloads/LinkGuard-extension.zip"
+  download
+  className="install-btn"
+>
+  Install Extension
+</a>
           <button
             className="github-btn"
             onClick={() =>
