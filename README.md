@@ -89,6 +89,23 @@ npm run dev
 ```
 
 
+## 📸 Screenshots
+
+### 1. Homepage
+![Homepage](docs/screenshots/home.page.png)
+
+### 2. Safe Website Detection
+![Safe Website](docs/screenshots/safe.url.png)
+
+### 3. Phishing Warning
+![Phishing Warning](docs/screenshots/phishing.warning.png)
+
+### 4.Safe Website
+![Blocked Website](docs/screenshots/safe.png)
+
+### 5. Browser Extension
+![Extension Popup](docs/screenshots/extension.png)
+
 ## Author
 
 Adula Manikanta
