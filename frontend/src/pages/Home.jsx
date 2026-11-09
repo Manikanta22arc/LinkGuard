@@ -89,7 +89,7 @@ setResult({
   prediction: data.prediction,
   explanation:
     data.prediction === "Safe"
-      ? "This URL appears safe based on machine learning analysis."
+      ? "This URL appears safe ."
       : "Warning! This website appears malicious or suspicious."
 });
   } catch (err) {
@@ -105,7 +105,7 @@ setResult({
   {
     title: "Threat Detection",
     icon: <FaRobot />,
-    desc: "Machine learning detects phishing, malware, defacement and suspicious URLs in real time."
+    desc: "This detects phishing, malware, defacement and suspicious URLs in real time."
   },
   {
     title: "Browser Protection",
@@ -225,20 +225,19 @@ className="hero-badge"
 
 <motion.p variants={fadeUp} className="hero-description">
   LinkGuard protects you against phishing, malware, fake login
-  pages, scam websites and malicious URLs using real-time Machine
-  Learning analysis before a website is opened.
+  pages, scam websites and malicious URLs using real-time.
 </motion.p>
 
 <motion.div variants={fadeUp} className="hero-stats">
 
   <div className="stat-box">
-      <h2>600K+</h2>
+      <h2>Multiple Security Checks</h2>
       <span>URLs Trained</span>
   </div>
 
   <div className="stat-box">
-      <h2>99%</h2>
-      <span>Detection Rate</span>
+      
+      <span>Rule-Based Detection</span>
   </div>
 
   <div className="stat-box">
@@ -278,17 +277,17 @@ className="hero-stats"
 
 <div>
 
-<h2>98.7%</h2>
 
-<span>Detection Accuracy</span>
+
+<span>Trusted Domain Validation</span>
 
 </div>
 
 <div>
 
-<h2>0.4s</h2>
 
-<span>Average Scan</span>
+
+<span>Suspicious URL Detection</span>
 
 </div>
 
@@ -696,7 +695,7 @@ Stay One Step Ahead of Cyber Threats
 </h2>
 
 <p>
-LinkGuard uses Machine Learning to detect malicious websites before they can steal your credentials or infect your device.
+LinkGuard  detects malicious websites before they can steal your credentials or infect your device.
 </p>
           <a
   href="/downloads/LinkGuard-extension.zip"
